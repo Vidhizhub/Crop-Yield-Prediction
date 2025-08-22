@@ -24,7 +24,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 # Mount the data directory to serve image files
 app.mount("/data", StaticFiles(directory="data"), name="data")
 
-# Templates directory
+# Templates directory  #Tell FastAPI where templates are located
 templates = Jinja2Templates(directory="templates")
 
 # Faker database of users
